@@ -182,7 +182,6 @@ footer {
 /**rotar circulo cuando carga**/
 -webkit-@keyframes spinner {
     to {
-
         transform: rotate(360deg);
     }
 }
@@ -200,9 +199,9 @@ footer {
 /*grosor de menu*/
 .custom-navbar {
     margin-bottom: 0;
-    background-color: #5A0000;
+    /*background-color: #5A0000;*/
+    background-color: #252525;
     padding: 9px 0;
-    
 }
 
 * {
@@ -236,15 +235,15 @@ header {
     padding: 1px;
     font: 18px;
     color: #5A0000;
-    float: left;
+    float: right;
     width: 15%;
-
 }
 
-/**tamaño del logo menu**/
+/**tamaño del menu**/
 nav {
-    position: relative;
-    width: 950px;
+    position: sticky;
+    width: 1000px;
+    /*width: 955px;*/
     margin: 0 auto;
 }
 
@@ -253,19 +252,21 @@ nav {
 #cssmenu ul,
 #cssmenu ul li,
 #cssmenu ul li a,
-#cssmenu #head-mobile {
+#cssmenu #head-mobile,
+#cssmenu {
     border: 0;
     list-style: none;
     /*permite definir de golpe todos los parámetros*/
     line-height: 1;
     display: block;
     /*dividir y bloquear*/
-    position: relative;
+    position: sticky;
     /*acomodar*/
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
+
 
 #cssmenu:after,
 #cssmenu > ul:after {
@@ -284,14 +285,15 @@ nav {
 /**cajon menu de logo y texto **/
 #cssmenu {
     font-family: sans-serif;
-    background: #5A0000;
-
+    /* background: #5A0000; */
+    background: #252525;
+    padding: 10px;
 }
 
 #cssmenu > ul > li {
     float: left;
-
 }
+
 /**texto del menu**/
 #cssmenu > ul > li > a {
     padding: 25px;
@@ -305,6 +307,11 @@ nav {
     font-weight: 600;
     /*grosor de letra*/
     font-family: sans-serif;
+}
+
+/**texto del menu**/
+#cssmenu > ul > li > a:hover {
+    text-decoration: underline;
 }
 
 #cssmenu > ul > li:hover > a,
@@ -323,21 +330,24 @@ nav {
     -webkit-transition: background .3s ease;
     -ms-transition: background .3s ease;
     transition: background .3s ease;
+    text-decoration: none;
 }
 
 #cssmenu > ul > li.has-sub > a {
     padding-right: 30px;/*separacion entre caja texto*/
     padding-top: 35px;/*texto desplazar hacia abajo*/
-
 }
+
 #cssmenu > ul > li.has-sub:hover > a:before {
-     top: 20px;
+    top: 20px;
     height: 0
 }
+
 #cssmenu ul ul {
     position: absolute;
     left: -9999px;
 }
+
 /*animacion al desplazar submenu*/
 #cssmenu ul ul li {
     height: 0;
@@ -420,6 +430,11 @@ nav {
 #cssmenu ul li ul li:hover,
 #cssmenu ul li ul li:hover {
     background: #363636;
+    text-decoration: none;
+}
+
+#cssmenu ul li ul li a:hover {
+    text-decoration: underline;
 }
 
 #cssmenu ul ul ul li.active a {
@@ -430,96 +445,97 @@ nav {
 #cssmenu > ul ul > li.has-sub > ul > li.active > a {
     border-top: 1px solid #333;
 }
+
 @media screen and (max-width:1000px) {
-.logo {
-/*top: 1%;
-left: 40%;
-width: 140px;
-height: 140%;
-text-align: center;
-float: none;
-*/
-text-align: center;
-float: none;
-position:static;
-}
-.logo_1 {
-top: -1%;
-left: 40%;
-width: 140px;
-height: 140%;
-text-align: center;
-float: none;
-position:static;
+    .logo {
+        /*top: 1%;
+        left: 40%;
+        width: 140px;
+        height: 140%;
+        text-align: center;
+        float: none;
+        */
+        text-align: center;
+        float: left;
+        position: static;
+    }
+    .logo_1 {
+        top: -1%;
+        left: 40%;
+        width: 140px;
+        height: 140%;
+        text-align: center;
+        float: none;
+        position:static;
     }
 }
-@media screen and (max-width:768px) {
-.logo {
-/*top: -2%;
-bottom: 12px;
-left: 40%;
-width: 135px;
-height: 140%;
-text-align: center;
-*/
 
-top: -9%;
-left: -2%;
-width: 125px;
-height: 140%;
-position:static;
-}
-.logo_1 {   
-/*top: -1%;
-left: 40%;
-width: 140px;
-height: 140%;
-text-align: center;
-float: none;
-*/
-position: static;
-text-align: center;
-float: none;
-}
-/*grosor de menu*/
-.custom-navbar {
-    padding: 13px 0px 0px 0px;
- }
+@media screen and (max-width:768px) {
+    .logo {
+        /*top: -2%;
+        bottom: 12px;
+        left: 40%;
+        width: 135px;
+        height: 140%;
+        text-align: center;
+        */
+        top: -9%;
+        left: -2%;
+        width: 125px;
+        height: 140%;
+        position:static;
+    }
+    .logo_1 {   
+        /*top: -1%;
+        left: 40%;
+        width: 140px;
+        height: 140%;
+        text-align: center;
+        float: none;
+        */
+        position: static;
+        text-align: center;
+        float: none;
+    }
+    /*grosor de menu*/
+    .custom-navbar {
+        padding: 13px 0px 0px 0px;
+    }
 }
 @media only screen and (max-width : 460px) {
-.logo {
-top: -9%;
-left: -2%;
-width: 125px;
-height: 140%;
-position:static;
+    .logo {
+        top: -9%;
+        left: -2%;
+        width: 125px;
+        height: 140%;
+        position:static;
+    }
+    .logo_1 {
+        position:static;
+        text-align: center;
+        float: none;
+    }
 }
-.logo_1 {
-position:static;
-text-align: center;
-float: none;
 
-}
-}
 @media screen and (max-width:1012px) {
     .logo {
-top: -1%;
-left: 40%;
-width: 140px;
-height: 140%;
-text-align: center;
-float: none;
-position:static;
-}
-.logo_1 {
-top: -1%;
-left: 40%;
-width: 160px;
-height: 140%;
-text-align: center;
-float: none;
-position:static;
-}
+        top: -1%;
+        left: 40%;
+        width: 140px;
+        height: 140%;
+        text-align: center;
+        float: none;
+        position:static;
+    }
+    .logo_1 {
+        top: -1%;
+        left: 40%;
+        width: 160px;
+        height: 140%;
+        text-align: center;
+        float: none;
+        position:static;
+    }
   
     nav {
         width: 100%;
@@ -680,11 +696,11 @@ position:static;
         height: 66px;
         width: 96px;
         cursor: pointer;
-        background-color:#7c242f; /*#C82C2C;*/
+        background-color:#252525;
     }
 
     #cssmenu .submenu-button.submenu-opened {
-        background: #262626;
+        background: #333;
     }
 
     #cssmenu ul ul .submenu-button {
@@ -760,10 +776,10 @@ position:static;
 }
 
 #home h1 {
-       color: #ffffff;
+    color: #ffffff;
     font-size: 6em;
     line-height: 1.2em;
-  font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 

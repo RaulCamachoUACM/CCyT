@@ -83,10 +83,15 @@
      <!-- 
     <div class="navbar custom-navbar navbar-fixed-top" role="navigation" >
           <nav id='cssmenu'>
-               <div class="logo_prueba"><a href="https://www.uacm.edu.mx/"><img src="/portals/_default/skins/ccyt/imagenes/index/logo_UACM1.png" class="logo"
+               <div class="logo_prueba">
+                    <a href="https://www.uacm.edu.mx/">
+                         <img src="/portals/_default/skins/ccyt/imagenes/index/logo_UACM1.png" 
+                              class="logo"
                               alt="Portal - Universidad Autónoma de la Cuidad de México"
                               alt="Portal - Universidad Autónoma de la Cuidad de México"
-                              title="Portal - UACM (Universidad Autónoma de la Cuidad de México)"></a></div>
+                              title="Portal - UACM (Universidad Autónoma de la Cuidad de México)">
+                    </a>
+               </div>
                <div id="head-mobile"></div>
                <div class="button"></div>
                <ul>
