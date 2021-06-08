@@ -1240,3 +1240,49 @@ icono-boton
 
 }
 
+/*---------------------------------------
+  BREADCRUMBS
+-----------------------------------------*/
+
+.breadcrumbs ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 2em;
+    color: #333;
+}
+  
+.breadcrumbs li {
+    display: inline-block;
+    position: relative;
+    padding-right: 2em;
+    margin: 0;
+}
+  
+.breadcrumbs li:after {
+    content: '>';
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    width: 2em;
+    text-align: center;
+}
+  
+.breadcrumbs li:last-child {
+    font-weight: bold;
+}
+  
+.breadcrumbs li:last-child:after {
+    content: '';
+}
+  
+.breadcrumbs a {
+    text-decoration: none;
+    display: inline-block;
+    color: #333;
+    white-space: nowrap;
+}
+  
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
