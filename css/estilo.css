@@ -82,6 +82,11 @@ html {
     box-sizing: border-box;
 }
 
+.content-home{
+    padding: 16px;
+    background-color: white;
+}
+
 /*---------------------------------------
   SCROLL
 -----------------------------------------*/
@@ -198,9 +203,10 @@ footer {
 
 /*grosor de menu*/
 .custom-navbar {
+    top: 0;
+    position: sticky;
     margin-bottom: 0;
-    /*background-color: #5A0000;*/
-    background-color: #252525;
+    background-color: #5A0000;
     padding: 9px 0;
 }
 
@@ -212,7 +218,6 @@ footer {
 
 /**caja de submenu**/
 header {
-    position: relative;
     width: 100%;
     background: #333;
 }
@@ -241,9 +246,7 @@ header {
 
 /**tamaño del menu**/
 nav {
-    position: sticky;
-    width: 1000px;
-    /*width: 955px;*/
+    width: 955px;
     margin: 0 auto;
 }
 
@@ -285,8 +288,7 @@ nav {
 /**cajon menu de logo y texto **/
 #cssmenu {
     font-family: sans-serif;
-    /* background: #5A0000; */
-    background: #252525;
+    background: #5A0000;
     padding: 10px;
 }
 
@@ -799,8 +801,6 @@ nav {
     position: fixed;
     top: 50%;
     left: 50%;
-    min-width: 100%;
-    min-height: 100%;
     width: auto;
     height: auto;
     z-index: -100;
@@ -817,7 +817,9 @@ nav {
 /*---------------------------------------
   TEXTO INDEX
 -----------------------------------------*/
-.texto-index{
+.texto-index {
+    /* background-color: white;
+    padding: 20px; */
     color: #1a1a1a;
     font-size: 22px;
     margin-bottom: -20px;
@@ -943,7 +945,6 @@ footer {
 
 footer p {
     padding-top: 12px;
-    position: relative;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -951,7 +952,6 @@ footer p {
 
 footer h2 {
     padding-top: 12px;
-    position: relative;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -959,7 +959,6 @@ footer h2 {
 
 footer h4 {
     padding-top: 12px;
-    position: relative;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -980,7 +979,6 @@ footer .copyright-text {
 -----------------------------------------*/
 
 .social-icon {
-    position: relative;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -1000,7 +998,6 @@ footer .copyright-text {
     -webkit-transition: all ease-in-out 0.3s;
     transition: all ease-in-out 0.3s;
     text-align: center;
-    position: relative;
     margin: 4px 8px 0 8px;
 
 }
