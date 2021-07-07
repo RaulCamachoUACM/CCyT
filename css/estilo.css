@@ -206,7 +206,7 @@ footer {
     top: 0;
     position: sticky;
     margin-bottom: 0;
-    background-color: #5A0000;
+    background-color: #78150C;
     padding: 9px 0;
 }
 
@@ -228,7 +228,7 @@ header {
     z-index: 123;
     padding: 1px;
     font: 18px;
-    color: #5A0000;
+    color: #78150C;
     float: left;
     width: 13%;
 }
@@ -239,7 +239,7 @@ header {
     z-index: 123;
     padding: 1px;
     font: 18px;
-    color: #5A0000;
+    color: #78150C;
     float: right;
     width: 15%;
 }
@@ -288,7 +288,7 @@ nav {
 /**cajon menu de logo y texto **/
 #cssmenu {
     font-family: sans-serif;
-    background: #5A0000;
+    background: #78150C;
     padding: 10px;
 }
 
@@ -326,7 +326,7 @@ nav {
 #cssmenu ul li.active:hover,
 #cssmenu ul li.active,
 #cssmenu ul li.has-sub.active:hover {
-    background: #7a242f !important;
+    background: #A52A2A !important;
      border-radius: 10px 10px 0 0;
     /*animacion al desplazar submenu*/
     -webkit-transition: background .3s ease;
@@ -355,7 +355,7 @@ nav {
     height: 0;
     -webkit-transition: all .25s ease;
     -ms-transition: all .25s ease;
-    background: #7c242f;
+    background: #A52A2A;
     transition: all .25s ease;
 }
 
@@ -427,11 +427,11 @@ nav {
 }
 #cssmenu ul ul li.has-sub:hover,
 #cssmenu ul li.has-sub ul li.has-sub ul li:hover {
-    background: #363636;
+    background: #C94344;
 }
 #cssmenu ul li ul li:hover,
 #cssmenu ul li ul li:hover {
-    background: #363636;
+    background: #C94344;
     text-decoration: none;
 }
 
@@ -558,7 +558,7 @@ nav {
     }
 
     #cssmenu ul li:hover {
-        background: #363636;
+        background: #C94344;
     }
 
     #cssmenu ul ul li,
@@ -581,11 +581,11 @@ nav {
     }
 
     #cssmenu ul ul li {
-        background: #333 !important;
+        background: #A52A2A !important;
     }
 
     #cssmenu ul ul li:hover {
-        background: #363636 !important;
+        background: #C94344 !important;
     }
 
     #cssmenu ul ul ul li a {
@@ -694,15 +694,15 @@ nav {
         right: 0;
         top: 0;
         display: block;
-        border-left: 1px solid #444;
+        border-left: 1px solid #30475E;
         height: 66px;
         width: 96px;
         cursor: pointer;
-        background-color:#252525;
+        background-color:#222831;
     }
 
     #cssmenu .submenu-button.submenu-opened {
-        background: #333;
+        background: #30475E;
     }
 
     #cssmenu ul ul .submenu-button {
@@ -1256,7 +1256,7 @@ icono-boton
 }
   
 .breadcrumbs li:after {
-    content: '>';
+    content: '/';
     position: absolute;
     display: inline-block;
     right: 0;
