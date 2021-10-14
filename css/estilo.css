@@ -87,6 +87,46 @@ html {
     background-color: white;
 }
 
+
+/*---------------------------------------
+  CONTENIDO
+-----------------------------------------*/
+
+.content-general {
+    font-family: arial, sans-serif;
+    margin: 12px;
+}
+
+.content-general h2 {
+    margin: 12px;
+    background-color: #BE3144;
+    color: white;
+    padding: 10px;
+    margin-top: 3rem;
+}
+
+
+ .content-general table {
+    white-space: nowrap;
+    
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: auto;
+    border: 1px solid #DDDDDD;
+  }
+  
+  .content-general  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+
+  .content-general td:hover {
+      background-color: #aaa;
+  }
+  
+  .content-general  tr:nth-child(even){background-color: #DDDDDD}
+
 /*---------------------------------------
   SCROLL
 -----------------------------------------*/
@@ -326,7 +366,7 @@ nav {
 #cssmenu ul li.active:hover,
 #cssmenu ul li.active,
 #cssmenu ul li.has-sub.active:hover {
-    background: #A52A2A !important;
+    background: brown !important;
      border-radius: 10px 10px 0 0;
     /*animacion al desplazar submenu*/
     -webkit-transition: background .3s ease;
@@ -355,7 +395,7 @@ nav {
     height: 0;
     -webkit-transition: all .25s ease;
     -ms-transition: all .25s ease;
-    background: #A52A2A;
+    background: brown;
     transition: all .25s ease;
 }
 
@@ -581,7 +621,7 @@ nav {
     }
 
     #cssmenu ul ul li {
-        background: #A52A2A !important;
+        background: brown !important;
     }
 
     #cssmenu ul ul li:hover {
