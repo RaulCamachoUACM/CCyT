@@ -108,10 +108,9 @@ html {
 
  .content-general table {
     white-space: nowrap;
-    
     margin: 0 auto;
     border-collapse: collapse;
-    border-spacing: 0;
+    border-spacing: 1;
     width: auto;
     border: 1px solid #DDDDDD;
   }
@@ -119,13 +118,23 @@ html {
   .content-general  th, td {
     text-align: left;
     padding: 8px;
+    border: 2px solid white;
+  }
+
+  .content-general  th {
+    background-color: #BE3144;
+    color: white;
+  }
+
+  .content-general td {
+    background-color: #eee;
   }
 
   .content-general td:hover {
       background-color: #aaa;
   }
   
-  .content-general  tr:nth-child(even){background-color: #DDDDDD}
+  /*.content-general  tr:nth-child(even){background-color: #DDDDDD}*/
 
 /*---------------------------------------
   SCROLL
